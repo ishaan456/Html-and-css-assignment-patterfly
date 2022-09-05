@@ -1,0 +1,30 @@
+#title{
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(50, 195, 252);
+}
+
+.row{
+    margin-right: 2rem;
+}
+#dp1{
+    /* display: flex; */
+    float: right;
+    position: relative;
+    margin-right: -6rem;
+    height: 10rem;
+    width:10rem;
+}
+.placeholder{
+    font-style: italic;
+}
+#btn{
+    width: 71%;
+    margin-left: 6rem;
+    height: 2rem;
+    padding-top: 0rem;
+}
+input{
+    font-style: italic;
+}

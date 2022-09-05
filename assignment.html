@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="#">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PatternFly | Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="cssfile.css">
+    
+</head>
+
+<body>
+   <div class ="header">
+    <div id = "logo">
+        <img src="icon.svg" alt="error">
+    </div>
+    <div id = "heading">
+        <h2>P A T T E R N F L Y</h2>
+    </div>
+     
+   </div>
+
+   <div class = "placeholder_text">
+   Are you ready to explore the endless possibilities with Patternfly?
+   </div>
+   <div class="login_box" >
+    <div id = "entries">
+        <select id="language">
+            <option value="English">English</option>
+            <option value="Hindi">Hindi</option>
+
+        </select>
+        <h3 id="text2">Log In to Your Account</h3>
+
+        <form id = "form1">
+            <div class = "data" >
+                <input id="userid" type="text" placeholder="Email or phone or username">
+            </div>
+            <div class ="data" >
+                 <input id="password" type="text" placeholder="Password">
+            </div>
+        </form>
+        <!-- <p id="testtext">tessstt</p> -->
+        <div class="list1">
+            <label id = "checkbox">
+                <input  type="checkbox" /> Keep me logged in for 30 days
+              </label>
+
+              <a id = "forgot" href="">Forgot password?</a>
+              
+        </div>
+<button  id="login" type="submit">
+    Log In
+</button>
+        <!-- <div class="loginbtn">
+            <input id="login" type="submit" value="Log In"/>
+        </div> -->
+        <div class="signup">
+            Need an account? 
+            <a id=signup href="">Sign up</a>
+        </div>
+
+
+   
+   </div>
+</div>
+
+<footer>
+    <ul  id="footer" >
+        <li type="3" id="item"> <a id = "footeritems" href="">Terms of Use</a> </li>
+        <li type="3" id="item"> <a id = "footeritems" href="">Help</a></li>
+        <li type="3" id="item"><a id = "footeritems" href="">Privacy </a> </li>
+    </ul>
+</footer>
+<script src="index.js"></script>
+</body>
+</html>

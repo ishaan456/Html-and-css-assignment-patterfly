@@ -1,0 +1,138 @@
+.body{
+    /* margin: 1rem; */
+    background-color: #f4f4f4;;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:600;
+}
+
+.nav-link{
+    transition-property: background-color;
+}
+.nav-link:hover{
+    background-color: black;
+}
+.usercard{
+  margin-left: -6rem;
+  width: auto;
+  /* padding: 3.4rem; */
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 0.25rem;
+  height: auto;
+  background: white;
+
+/* margin: 1.4rem;
+height: 20rem; */
+    
+}
+.card-img-top {
+     display: block; 
+    /* justify-content: center; */ 
+    
+        /* display: flex; */
+    /* justify-content: center; */
+    /* align-self: center; */
+    margin: auto;
+    padding: 1rem;
+    width: 51%;
+    margin-left: 4rem;
+  
+    /* border-top-left-radius: calc(10.25rem - 1px); */
+    /* border-top-right-radius: calc(8.25rem - 1px); */
+    /* margin-top: -1rem;
+    margin-bottom: 0rem; */
+  }
+   .card-title{
+    text-align: center;
+  } 
+  .designation{
+    text-align: center;
+  }
+  .row{
+    display: flex;
+    margin-right: 20px;
+    margin-left: 102px;
+    margin-top: 1rem;
+  }
+  .socialmedia{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+  }
+  #sc{
+    height: 1.3rem;
+    width: 38px;
+    margin-left: 1.3rem;
+    margin-top: 0.7rem;
+  }
+    
+  
+  #twitter{
+    width: 37px;
+    /* margin-left: -2rem; */
+    /* height:1.5rem; */
+  }
+  .media-body{
+    margin-left: 8px;
+  }
+  .media {
+margin-top: 3px;
+  }
+  .container{
+    margin-top: 1rem;
+    background: #f7f7f7;
+  }
+  .card {
+    position: relative;
+    display: flex;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+    /* max-width: max-content; */
+    width: auto;
+    /* margin-left: 2rem; */
+    margin-left: 0rem;
+  }
+  h4{
+    margin-bottom: -0.5rem;
+    /* display: flex;
+    flex-direction: column; */
+    
+  }
+  @media(max-width:768px){
+    
+    .card{
+    margin-left:-6rem;
+    margin-top: 1rem;
+   
+    }
+  }
+  .tableofsc{
+    
+      display: flex;
+      justify-content: center;
+      margin-right: 2rem;
+    
+  }
+  #dpimg{
+    width:11rem;
+    height: 11rem;
+    float: right;
+  }
+  
+  #col1{
+     
+      margin: 0 7rem 0 -7rem;
+    }
+    #col2{
+     
+      margin: 0 7rem 0 -7rem;
+    }
+  #bottom-img:hover{
+cursor: pointer;
+  }
+  #editbtn:hover{
+    background-color: white;
+  }

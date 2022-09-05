@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="bscssfile.css">
+    <title>BSwebpage</title>
+
+
+</head>
+
+<body class="body">
+    <nav style= "width:100%;"class="navbar navbar-expand-lg  sticky-top navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">WebSiteName</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Page 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Page 2</a>
+                </li>
+              
+                <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown link
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li> -->
+            </ul>
+        </div>
+        <div class="log">
+            <!-- onclick="window.location.href='signuppage.html';" -->
+            <button onclick="window.open('signuppage.html', '_blank');"  id ="signup" type="button" class="btn btn-dark btn-sm"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+              </svg>Sign Up </button>
+            <button type="button" class="btn btn-dark btn-sm"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+                <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+              </svg>Login</button>
+
+        </div>
+        <!-- Button trigger modal -->
+
+    </nav>
+    <!-- <div class="container"></div> -->
+        <div class="row">
+            <div class="col-md-2">
+                <div class="usercard">
+                    <button id="editbtn" style="float:right; color: white; border: 1px;"  type="button" data-toggle="modal" data-target="#exampleModal" class="btn btn-outline-secondary"><img src="edit-icon-png-3602(1).png" alt="editbtn" width="16rem;"></button>
+
+                    <!-- <button style="float:right;" type="button" data-toggle="modal" data-target="#exampleModal"> -->
+                        <!-- Launch demo modal -->
+                        <!-- <img src="edit-icon-png-3602(1).png" alt="editbtn" width="20rem;">
+                      </button> -->
+                      
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 style="float:right" class="modal-title" id="exampleModalLabel">Your Details</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body" style="font-size: 14px;">
+                                <div id= "row1" class="row" style="margin-bottom: -7rem;">
+                                    <div id="col1" class="col-sm-5">
+                                        <label for="fname">Name :</label>
+                                <input class="form-control form-control-sm" type="text" id = "fname"placeholder="John Doe" style="font-weight: bolder;" >
+                                <!-- <label for="Designation">Designation :</label>
+                                <input class="form-control" type="text" id = "Designation"placeholder="Programmer" style="font-weight: bolder;" readonly>
+                                <label for="Address">Address :</label>
+                                <input class="form-control" type="text" id = "Address"placeholder="Masjid Banda, Hyderabad" style="font-weight: bolder;" readonly> -->
+                                    </div>
+                                    <div id="col2" class="col-sm-5"></div>
+                                    <div  class="col-sm-2">
+                                        <img id="dpimg" src="ppuser.png" alt="dp">
+                                    </div>
+                                    <!-- <div id= "row2" class="row">
+                                        <div class="col-sm-4"></div>
+                                        <div class="col-sm-4"></div>
+                                        <div class="col-sm-4"></div>
+                            
+                                    </div> -->
+                        
+                                </div>
+                                <div id= "row2" class="row">
+                                    <div id="col1"class="col-sm-5">
+                                        <label for="Designation">Designation :</label>
+                                <input class="form-control form-control-sm" type="text" id = "Designation" placeholder="Programmer" style="font-weight: bolder;" >
+                                    </div>
+                                        <div id="col2"class="col-sm-5"></div>
+                                        <div class="col-sm-2"></div>
+                                </div>
+                                <div id= "row3" class="row">
+                                    <div id="col1"class="col-sm-5">
+                                        <label for="Address">Address :</label>
+                                <input class="form-control form-control-sm" type="text" id = "Address"placeholder="Masjid Banda, Hyderabad" style="font-weight: bolder;" > 
+                                    </div>
+                                        <div id="col2"class="col-sm-5"></div>
+                                        <div class="col-sm-2"></div>
+                                </div>
+                                <div id= "row4" class="row">
+                                    <div id="col1" class="col-sm-5">
+                                        <label for="Contact Number">Contact:</label>
+                                <input class="form-control form-control-sm" type="text" id = "Contact Number"placeholder="785293834" style="font-weight: bolder;" > 
+                                    </div>
+                                        <div id="col2"class="col-sm-5">
+                                            <label for="Email Address">Email Address :</label>
+                                <input class="form-control form-control-sm" type="text" id = "Email Address"placeholder="123@abc.in" style="font-weight: bolder;" >
+                                        </div>
+                                        <div class="col-sm-2"></div>
+                                </div>
+                                <div id= "row5" class="row">
+                                    <div id="col1" class="col-sm-5">
+                                        <label for="Link">Link:</label>
+                                <input class="form-control form-control-sm" type="text" id = "Link"placeholder="abc.com" style="font-weight: bolder;" > 
+                                    </div>
+                                        <div id="col2"class="col-sm-5">
+                                            <label for="Language">Language:</label>
+                                <input class="form-control form-control-sm" type="text" id = "Language"placeholder="English" style="font-weight: bolder;" >
+                                        </div>
+                                        <div class="col-sm-2"></div>
+                                </div>
+                                <br>
+                                <p>Profile Picture :</p>
+            
+                                        <button style="margin:0 1rem 1rem 1rem; border: 1px solid black;  border-radius: 0.25rem;" >
+                                            Choose File
+                                        </button><a style="font-style:italic;">No file chosen</a>
+                               
+                            </div>
+                            <div class="modal-footer">
+                              <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                              <button type="button" data-dismiss="modal"class="btn btn-secondary">Save </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    
+                    <img src="ppuser.png" class="card-img-top" alt="DP">
+                    <div class="card-body">
+                        <h5 id="nameofuser" class="card-title">John Doe</h5>
+                        <p id="designationofuser" class="designation">Programmer</p>
+                        <hr>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                        <ul style="font-size: smaller;" class="list-unstyled">
+                            <li class="media my-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                    <path
+                                        d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                </svg>
+                                <div id="addressofuser" class="media-body">
+                                    Masjid Banda, Hyderabad
+                                </div>
+                            </li>
+                            <li class="media my-2">
+                                <span class="material-symbols-outlined">
+                                    call
+                                </span>
+                                <div id="contactofuser" class="media-body">
+                                    1256563677
+                                </div>
+                            </li>
+                            <li class="media my-2">
+                                <span class="material-icons">
+                                    mail_outline
+                                </span>
+                                <div id="mailofuser" class="media-body">
+                                    john.d@example.com
+                                </div>
+                            </li>
+                            <li class="media my-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-link-45deg" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z" />
+                                    <path
+                                        d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z" />
+                                </svg>
+                                <div id="linkofuser" class="media-body">
+                                    <a href="https://www.google.com/" target="_blank">www.google.co.in</a>
+                                </div>
+                            </li>
+                            <li class="media my-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-translate" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286H4.545zm1.634-.736L5.5 3.956h-.049l-.679 2.022H6.18z" />
+                                    <path
+                                        d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm7.138 9.995c.193.301.402.583.63.846-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6.066 6.066 0 0 1-.415-.492 1.988 1.988 0 0 1-.94.31z" />
+                                </svg>
+                                <div id="langofuser" class="media-body">
+                                    English
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- <a href="#" class="nav-link "><img src="icon.svg" alt=""></a> -->
+                        <hr> <div class="tableofsc"><ul class="socialmedia" style="list-style: none;">
+                            <li class="twitter.com"><a href="www.twitter.com"><img id="twitter" src="twitter-logo.png" alt="twitter"></a>
+                            </li>
+                            <li class="sc">
+                                <a href="www.soundcloud.com"><img id="sc" src="soundcloud-logopng-28186.png"
+                                        alt="soundcloud"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-10">
+                <div class="card">
+                    <div class="card-header">
+                        Background
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li class="media my-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-file-person-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-1 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11z" />
+                                </svg>
+                                <h4 class="media-body">
+                                    About
+                                </h4>
+                            </li>
+                            <hr>
+                            <div class="about_body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi,
+                                blanditiis! Consectetur quod, ab modi, eos ipsum similique deleniti voluptatum amet sed
+                                nesciunt repellendus vitae molestias ad explicabo in quam maiores!</div>
+                            <br>
+                            <li class="media my-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-building" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694 1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z" />
+                                    <path
+                                        d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z" />
+                                </svg>
+                                <h4 class="media-body">
+                                    Work Experience
+                                </h4>
+                            </li>
+                            <hr>
+                            <a style = "font-weight: bold;">Project1,</a>
+                            <a style="color:rgb(0, 175, 219)" >Java, Angular</a>
+                            <p>Dec.2013 - Dec.2014  <svg style="margin-left:5px; margin-right:5px ;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                              </svg> 1 year</p>
+                            <div class="about_body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi,
+                                blanditiis! Consectetur quod, ab modi, eos ipsum similique deleniti voluptatum amet sed
+                                nesciunt repellendus vitae molestias ad explicabo in quam maiores!
+                            <ul>
+                                <li>Random Item1</li>
+                                <li>Random Item2</li>
+                                <li>Random Item3</li>
+                            </ul>
+                            
+                            
+                            </div>
+                            <br>
+                            <li class="media my-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-tools" viewBox="0 0 16 16">
+                                    <path
+                                        d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0Zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708ZM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11Z" />
+                                </svg>
+                                <h4 class="media-body">
+                                    Skills
+                                </h4>
+                            </li>
+                            <hr>
+                                    <p style = "font-weight: bold;">Web Development</p>
+                                    <button type="button" class="btn btn-primary btn-sm">HTML</button>
+                                    <button type="button" class="btn btn-primary btn-sm">CSS</button>
+                                    <button type="button" class="btn btn-primary btn-sm">Javascript</button>
+                                    <hr>
+                                    <p style = "font-weight: bold;">Compression</p>
+                                    <button type="button" class="btn btn-primary btn-sm">MP4</button>
+                                    <button type="button" class="btn btn-primary btn-sm">MPEG</button>
+                                    <button type="button" class="btn btn-primary btn-sm">GIF</button>
+                                
+                                <li></li>
+                                <!-- </ul>
+                            <div class="about_body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi,
+                                blanditiis! Consectetur quod, ab modi, eos ipsum similique deleniti voluptatum amet sed
+                                nesciunt repellendus vitae molestias ad explicabo in quam maiores!</div> -->
+                            <br>
+                            <li class="media my-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z" />
+                                    <path
+                                        d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z" />
+                                </svg>
+                                <h4 class="media-body">
+                                    Education
+                                </h4>
+                            </li>
+                            <hr>
+                            <div class="about_body">
+                                <a style = "font-weight: bold;">Bachelor of Technology, </a>
+                                <a>IIT Kanpur</a>
+                                <p>Jun.2011 - Jan.2014</p>
+                                <p style="font-style: italic;">CGPA:10.0</p>
+                                <button type="button" class="btn btn-primary btn-sm">DB-SQL 101</button>
+                                <button type="button" class="btn btn-primary btn-sm">Core Java 102</button>
+                            </div>
+                            <br>
+                            <li class="media my-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                                </svg>
+                                <h4 class="media-body">
+                                    Interests
+                                </h4>
+                            </li>
+                            <hr>
+                            <div class="about_body">
+                                <p style = "font-weight: bold;">Wildlife </p>
+                                <button type="button" class="btn btn-primary btn-sm">Ferrets</button>
+                                <button type="button" class="btn btn-primary btn-sm">Unicorn</button>
+                            </div>
+                            
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="fixed-bottom"><img id="bottom-img"style="float:right;" src="BottomRightButton.png" alt="bottom"></div>
+
+    <!-- </div> -->
+    <!-- <script>alert("Hello! I am an alert box!!");</script> -->
+    
+    <script src="index.js"></script>
+</body>
+
+</html>
