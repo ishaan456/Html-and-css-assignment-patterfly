@@ -101,14 +101,14 @@ margin-top: 3px;
     flex-direction: column; */
     
   }
-  @media(max-width:768px){
+  /* @media(max-width:768px){
     
     .card{
     margin-left:-6rem;
     margin-top: 1rem;
    
     }
-  }
+  } */
   .tableofsc{
     
       display: flex;

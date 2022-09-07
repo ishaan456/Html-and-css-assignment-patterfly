@@ -27,7 +27,7 @@ body{
    
 }
 .placeholder_text{
-    padding: 0px 257px 0px 257px;
+    /* padding: 0px 257px 0px 257px; */
     display: flex;
     /* align-items: center; */
     justify-content: center;
@@ -142,9 +142,11 @@ margin: 2rem 1rem 0 1rem;
     color: white;
     background-color: rgb(6, 155, 255);
     width: 316px;
-    border: 2px;
+    border: 0.1px rgb(94, 94, 94) solid;
     transition-property: background-color;
     cursor: pointer;
+    margin-top: 1.7rem;
+    height: 2rem;
 }
 #login:hover{
     background-color: rgb(56, 192, 255);
