@@ -22,70 +22,75 @@
       </div>
       <div class="col-sm-8" >
         <!-- One of three columns -->
-        <form class="signupform" >
+        <form name="myForm" class="signupform" >
             <div class="form-group">
                 <label for="firstname">First Name :</label>
-                <input type="text" class="form-control form-control-sm" id="firstname" placeholder = "First Name">
+                <input name="fname" type="text" class="form-control form-control-sm" id="firstnamesignup" placeholder = "First Name" required>
                 <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
               </div>
             <div class="form-group">
               <label for="lastname">Last Name :</label>
-              <input type="text" class="form-control form-control-sm" id="lastname" placeholder = "Last Name">
+              <input name="lname" type="text" class="form-control form-control-sm" id="lastnamesignup" placeholder = "Last Name" required>
              
             </div>
             <div class="form-group">
                 <label for="date">Date of Birth :</label>
-                <input type="date" class="form-control form-control-sm" id="date" >
+                <input name="dob" type="date" class="form-control form-control-sm" id="datesignup" required >
                
               </div>
               <div class="form-group ">
                 <label for="eid">Employee ID :</label>
-                <input type="text" class="form-control form-control-sm" id="eid" placeholder = "Employee ID number">
+                <input name="eid" type="number" class="form-control form-control-sm" id="eidsignup" placeholder = "Employee ID number" required>
                
               </div>
               <div class="form-group ">
                 <label for="Designation">Designation :</label>
-                <input type="text" class="form-control form-control-sm" id="Designation" placeholder = "Designation">
+                <input name="Designation" type="text" class="form-control form-control-sm" id="Designationsignup" placeholder = "Designation" required>
                
               </div>
               <div class="form-group ">
                 <label for="Contact">Contact:</label>
-                <input type="text" class="form-control form-control-sm" id="Contact" placeholder = "Contact number">
+                <input name="Contact" type="text" class="form-control form-control-sm" id="Contactsignup" placeholder = "Contact number" required>
                
               </div>
               <div class="form-group ">
-                <label for="Address">Address:</label>
-                <input type="text" class="form-control form-control-sm" id="Address" placeholder = "Address">
+                <label  for="Address">Address:</label>
+                <input  name="Address" type="text" class="form-control form-control-sm" id="Addresssignup" placeholder = "Address" required>
                
               </div>
               <div class="form-group ">
                 <label for="Link">Link:</label>
-                <input type="text" class="form-control form-control-sm" id="Link" placeholder = "Link">
+                <input name="Link" type="text" class="form-control form-control-sm" id="Linksignup" placeholder = "Link" required>
                
               </div>
               <div class="form-group ">
                 <label for="Language">Language:</label>
-                <input type="text" class="form-control form-control-sm" id="Language" placeholder = "Language">
+                <input list = "langs"name="Language" type="text" class="form-control form-control-sm" id="Languagesignup" placeholder = "Language" required>
+                <datalist id="langs"> 
+                  <option value="English" > 
+                  <option value="Hindi" > 
+                  </datalist> 
               </div>
                
             
             
               <div class="form-group">
                 <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control form-control-sm" id="exampleInputEmail1" >
+                <input name="email" type="email" class="form-control form-control-sm" id="exampleInputEmail1" >
                 <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1" >Password</label>
+                <input name="password" type="password" class="form-control form-control-sm" id="exampleInputPassword1"placeholder = "Password" required>
               </div>
             <p>Profile Picture :</p>
             
-            <button style="margin:0 1rem 1rem 1rem; border: 1px solid black;  border-radius: 0.25rem;" >
+            <!-- <button type="file" style="margin:0 1rem 1rem 1rem; border: 1px solid black;  border-radius: 0.25rem;" >
                 Choose File
-            </button><a style="font-style:italic;">No file chosen</a>
-            <div class="form-group">
-              <label for="exampleInputPassword1" >Password</label>
-              <input type="password" class="form-control form-control-sm" id="exampleInputPassword1"placeholder = "Password">
-            </div>
+            </button><a style="font-style:italic;">No file chosen</a> -->
+            <input id="uploadpic" type="file" name="profile_photo" placeholder="Photo" required="" >
             
-            <button type="button" class="btn btn-primary btn-lg btn-block " id="btn" style="margin-bottom: 1rem;">Sign Up</button>
+            <button onclick="signupnewuser(); "  type="button" class="btn btn-primary btn-lg btn-block " id="btnSU" style="margin-bottom: 1rem;">Sign Up</button>
 
           </form>
       </div>
@@ -94,6 +99,6 @@
       </div>
     </div>
   </div>
-    
+  <script src="index.js"></script>
 </body>
 </html>

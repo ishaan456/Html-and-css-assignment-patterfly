@@ -25,7 +25,7 @@
 
 </head>
 
-<body class="body">
+<body class="body" onload="setDetailsnewuser()">
     <nav style= "width:100%;"class="navbar navbar-expand-lg  sticky-top navbar-dark bg-dark">
         <a class="navbar-brand" href="#">WebSiteName</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -58,14 +58,12 @@
         </div>
         <div class="log">
             <!-- onclick="window.location.href='signuppage.html';" -->
-            <button onclick="window.open('signuppage.html', '_blank');"  id ="signup" type="button" class="btn btn-dark btn-sm"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+            <button onclick="onclicksignup();"  id ="signup" type="button" class="btn btn-dark btn-sm"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
                 <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-              </svg>Sign Up </button>
-            <button type="button" class="btn btn-dark btn-sm"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+              </svg>Sign Up </button> <button onclick="logoutfunc()" type="button" id="logoutbutton" class="btn btn-dark btn-sm"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
                 <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
-              </svg>Login</button>
-
+              </svg>LogOut</button>
         </div>
         <!-- Button trigger modal -->
 
@@ -86,7 +84,7 @@
                         <div class="modal-dialog" role="document">
                           <div class="modal-content">
                             <div class="modal-header">
-                              <h5 style="float:right" class="modal-title" id="exampleModalLabel">Your Details</h5>
+                              <h5 style="text-align: center;" class="modal-title" id="exampleModalLabel">Your Details</h5>
                               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                               </button>
@@ -95,7 +93,7 @@
                                 <div id= "row1" class="row" style="margin-bottom: -7rem;">
                                     <div id="col1" class="col-sm-5">
                                         <label for="fname">Name :</label>
-                                <input class="form-control form-control-sm" type="text" id = "fname"placeholder="John Doe" style="font-weight: bolder;" >
+                                <input class="form-control form-control-sm" type="text" id = "fname" value="John Doe" style="font-weight: bolder;" >
                                 <!-- <label for="Designation">Designation :</label>
                                 <input class="form-control" type="text" id = "Designation"placeholder="Programmer" style="font-weight: bolder;" readonly>
                                 <label for="Address">Address :</label>
@@ -113,10 +111,11 @@
                                     </div> -->
                         
                                 </div>
+                                
                                 <div id= "row2" class="row">
                                     <div id="col1"class="col-sm-5">
                                         <label for="Designation">Designation :</label>
-                                <input class="form-control form-control-sm" type="text" id = "Designation" placeholder="Programmer" style="font-weight: bolder;" >
+                                <input class="form-control form-control-sm" type="text" id = "Designation" value="Programmer" style="font-weight: bolder;" >
                                     </div>
                                         <div id="col2"class="col-sm-5"></div>
                                         <div class="col-sm-2"></div>
@@ -124,7 +123,7 @@
                                 <div id= "row3" class="row">
                                     <div id="col1"class="col-sm-5">
                                         <label for="Address">Address :</label>
-                                <input class="form-control form-control-sm" type="text" id = "Address"placeholder="Masjid Banda, Hyderabad" style="font-weight: bolder;" > 
+                                <input class="form-control form-control-sm" type="text" id = "Address"value="Masjid Banda, Hyderabad" style="font-weight: bolder;" > 
                                     </div>
                                         <div id="col2"class="col-sm-5"></div>
                                         <div class="col-sm-2"></div>
@@ -132,22 +131,22 @@
                                 <div id= "row4" class="row">
                                     <div id="col1" class="col-sm-5">
                                         <label for="Contact Number">Contact:</label>
-                                <input class="form-control form-control-sm" type="text" id = "Contact Number"placeholder="785293834" style="font-weight: bolder;" > 
+                                <input class="form-control form-control-sm" type="text" id = "Contact Number"value="785293834" style="font-weight: bolder;" > 
                                     </div>
                                         <div id="col2"class="col-sm-5">
                                             <label for="Email Address">Email Address :</label>
-                                <input class="form-control form-control-sm" type="text" id = "Email Address"placeholder="123@abc.in" style="font-weight: bolder;" >
+                                <input class="form-control form-control-sm" type="text" id = "Email Address"value="123@abc.in" style="font-weight: bolder;" >
                                         </div>
                                         <div class="col-sm-2"></div>
                                 </div>
                                 <div id= "row5" class="row">
                                     <div id="col1" class="col-sm-5">
                                         <label for="Link">Link:</label>
-                                <input class="form-control form-control-sm" type="text" id = "Link"placeholder="abc.com" style="font-weight: bolder;" > 
+                                <input class="form-control form-control-sm" type="text" id = "Link"value="abc.com" style="font-weight: bolder;" > 
                                     </div>
                                         <div id="col2"class="col-sm-5">
                                             <label for="Language">Language:</label>
-                                <input class="form-control form-control-sm" type="text" id = "Language"placeholder="English" style="font-weight: bolder;" >
+                                <input class="form-control form-control-sm" type="text" id = "Language"value="English" style="font-weight: bolder;" >
                                         </div>
                                         <div class="col-sm-2"></div>
                                 </div>
@@ -161,13 +160,14 @@
                             </div>
                             <div class="modal-footer">
                               <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-                              <button type="button" data-dismiss="modal"class="btn btn-secondary">Save </button>
+                              <button onclick=" modaledit();" type="button" id="savebtn" data-dismiss="modal" class="btn btn-secondary" >Save </button>
+                              
                             </div>
                           </div>
                         </div>
                       </div>
                     
-                    <img src="ppuser.png" class="card-img-top" alt="DP">
+                    <img id = "profilepic"src="ppuser.png" class="card-img-top" alt="DP">
                     <div class="card-body">
                         <h5 id="nameofuser" class="card-title">John Doe</h5>
                         <p id="designationofuser" class="designation">Programmer</p>
@@ -304,15 +304,18 @@
                                 </h4>
                             </li>
                             <hr>
-                                    <p style = "font-weight: bold;">Web Development</p>
-                                    <button type="button" class="btn btn-primary btn-sm">HTML</button>
-                                    <button type="button" class="btn btn-primary btn-sm">CSS</button>
-                                    <button type="button" class="btn btn-primary btn-sm">Javascript</button>
+                            <!-- <span class="badge badge-success"> </span> -->
+                            <a style = "font-weight: bold;">Web Development</a>
+                            <br>
+                                    <button type="button" style="font-weight: bolder;" class="btn btn-primary btn-sm">HTML</button>
+                                    <button type="button"style="font-weight: bolder;" class="btn btn-primary btn-sm">CSS</button>
+                                    <button type="button" style="font-weight: bolder;"class="btn btn-primary btn-sm">Javascript</button>
                                     <hr>
+                                    <!-- <span class="badge badge-success">S</span> -->
                                     <p style = "font-weight: bold;">Compression</p>
-                                    <button type="button" class="btn btn-primary btn-sm">MP4</button>
-                                    <button type="button" class="btn btn-primary btn-sm">MPEG</button>
-                                    <button type="button" class="btn btn-primary btn-sm">GIF</button>
+                                    <button type="button" style="font-weight: bolder;"class="btn btn-primary btn-sm">MP4</button>
+                                    <button type="button" style="font-weight: bolder;"class="btn btn-primary btn-sm">MPEG</button>
+                                    <button type="button" style="font-weight: bolder;"class="btn btn-primary btn-sm">GIF</button>
                                 
                                 <li></li>
                                 <!-- </ul>
@@ -338,8 +341,8 @@
                                 <a>IIT Kanpur</a>
                                 <p>Jun.2011 - Jan.2014</p>
                                 <p style="font-style: italic;">CGPA:10.0</p>
-                                <button type="button" class="btn btn-primary btn-sm">DB-SQL 101</button>
-                                <button type="button" class="btn btn-primary btn-sm">Core Java 102</button>
+                                <button type="button" style="font-weight: bolder;"class="btn btn-primary btn-sm">DB-SQL 101</button>
+                                <button type="button" style="font-weight: bolder;"class="btn btn-primary btn-sm">Core Java 102</button>
                             </div>
                             <br>
                             <li class="media my-2">
@@ -355,8 +358,8 @@
                             <hr>
                             <div class="about_body">
                                 <p style = "font-weight: bold;">Wildlife </p>
-                                <button type="button" class="btn btn-primary btn-sm">Ferrets</button>
-                                <button type="button" class="btn btn-primary btn-sm">Unicorn</button>
+                                <button type="button" style="font-weight: bolder;"class="btn btn-primary btn-sm">Ferrets</button>
+                                <button type="button"style="font-weight: bolder;" class="btn btn-primary btn-sm">Unicorn</button>
                             </div>
                             
                     </div>
